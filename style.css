@@ -1,5 +1,5 @@
 body {
-  background: rgba(0,0,0,0.4)url(background.jpeg);
+  background: rgba(0,0,0,0.7)url(background.jpeg);
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -48,7 +48,21 @@ h1, #about {
 
 #about p {
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+}
+
+#about p b {
+  display: inline-block;
+  animation: bounce 1.2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #experience {
@@ -90,15 +104,23 @@ h1, #about {
   color: #fff;
 }
 
+#contact i {
+  font-size: 4rem;
+}
+
 #contact a {
+  padding: 0;
+  margin: 0;
   background: none;
   border: none;
   transition: all 0.5s;
 }
 
 #contact a:hover {
-  background: rgba(255, 255, 255, 0.3);
-  color: #000;
+/*   background: rgba(255, 255, 255, 0.3); */
+  transform: translateY(-7px);
+  text-shadow: rgba(255, 255, 255, 0.2) 0px 15px 1px;
+  color: ;
   transition: all 0.5s;
 }
 
